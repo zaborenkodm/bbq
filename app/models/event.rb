@@ -6,6 +6,10 @@ class Event < ActiveRecord::Base
 
   # у события много комментариев и подписок
   has_many :comments
+  has_many :subscriptions
+
+  # у события много подписчиков (объекты User), через таблицу subscriptions, по ключу user_id
+  has_many :subscribers, through: :subscriptions, source: :user
 
   # юзера не может не быть
   validates :user, presence: true

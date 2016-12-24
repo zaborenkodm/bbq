@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
   # юзер может создавать много событий
   has_many :events
   has_many :comments
+  has_many :subscriptions
 
   # имя юзера должно быть, и не длиннее 35 букв
   validates :name, presence: true, length: {maximum: 35}
