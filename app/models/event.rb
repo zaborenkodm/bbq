@@ -7,6 +7,7 @@ class Event < ActiveRecord::Base
   # у события много комментариев и подписок
   has_many :comments
   has_many :subscriptions
+  has_many :photos
 
   # у события много подписчиков (объекты User), через таблицу subscriptions, по ключу user_id
   has_many :subscribers, through: :subscriptions, source: :user
@@ -19,5 +20,9 @@ class Event < ActiveRecord::Base
 
   validates :address, presence: true
   validates :datetime, presence: true
+
+  def visitors
+    (subscribers + [user]).uniq
+  end
 
 end
