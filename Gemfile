@@ -15,7 +15,7 @@ gem 'uglifier', '>= 1.3.0'
 # для поддержки jQuery
 gem 'jquery-rails'
 
-gem 'carrierwave'
+gem 'carrierwave', '~> 0.11.2'
 gem 'rmagick'
 gem 'fog-aws'
 
