@@ -5,8 +5,7 @@ gem 'rails', '~> 4.2.7'
 
 gem 'devise'
 gem 'devise-i18n'
-# пока убрал гем
-#gem 'devise-i18n-views'
+gem 'devise-i18n-views'
 gem 'russian'
 
 # гем, интегрирующий bootstrap
@@ -25,8 +24,7 @@ gem 'fog-aws'
 group :production do
   gem 'pg'
   # добавил гем для работы Heroku со статическими ассетами (изображения и таблицы стилей )
-  # пока убрал гем
-  #gem 'rails_12factor'
+  gem 'rails_12factor'
 end
 
 group :development, :test do
