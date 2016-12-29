@@ -23,6 +23,7 @@ gem 'fog-aws'
 # в продакшен сервере heroku этот гем соединяет с базой данных Postgres
 group :production do
   gem 'pg'
+  # добавил гем для работы Heroku со статическими ассетами (изображения и таблицы стилей )
   gem 'rails_12factor'
 end
 
