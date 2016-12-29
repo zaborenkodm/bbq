@@ -5,7 +5,7 @@ gem 'rails', '~> 4.2.7'
 
 gem 'devise'
 gem 'devise-i18n'
-gem 'devise-i18n-views'
+#gem 'devise-i18n-views'
 gem 'russian'
 
 # гем, интегрирующий bootstrap
