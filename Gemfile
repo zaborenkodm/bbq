@@ -24,7 +24,7 @@ gem 'fog-aws'
 group :production do
   gem 'pg'
   # добавил гем для работы Heroku со статическими ассетами (изображения и таблицы стилей )
-  gem 'rails_12factor'
+  #gem 'rails_12factor'
 end
 
 group :development, :test do
